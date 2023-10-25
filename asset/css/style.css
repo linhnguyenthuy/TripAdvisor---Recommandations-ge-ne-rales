@@ -84,61 +84,19 @@ p {
 .color {
   color: #ff5d5d;
 }
-main .box {
+.box {
+  /* border: 1px solid; */
+  /* height: 100px; */
   display: flex;
-  justify-content: space-around;
+  gap: 15px;
 }
-main .hotel {
-  width: 200px;
-  height: 70px;
-  border: 2px solid rgba(111, 107, 107, 0.893);
+.box > div {
   margin-top: 20px;
-  padding-top: 10px;
+  border: 2px solid rgba(68, 68, 68, 0.7);
   border-radius: 10px;
-  position: relative;
-}
-main .activite {
-  width: 200px;
-  height: 70px;
-  border: 2px solid rgba(111, 107, 107, 0.893);
-  margin-top: 20px;
-  padding-top: 10px;
-  border-radius: 10px;
-  position: relative;
-}
-main .location-de-vacance {
-  width: 200px;
-  height: 70px;
-  border: 2px solid rgba(111, 107, 107, 0.893);
-  margin-top: 20px;
-  padding-top: 10px;
-  border-radius: 10px;
-  position: relative;
-}
-main .restaurant {
-  width: 200px;
-  height: 70px;
-  border: 2px solid rgba(111, 107, 107, 0.893);
-  margin-top: 20px;
-  padding-top: 10px;
-  border-radius: 10px;
-  position: relative;
-}
-main .forum-de-voyage {
-  width: 200px;
-  height: 70px;
-  border: 2px solid rgba(111, 107, 107, 0.893);
-  margin-top: 20px;
-  padding-top: 10px;
-  border-radius: 10px;
-  position: relative;
-}
-main .plus {
-  width: 200px;
-  height: 70px;
-  border: 2px solid rgba(111, 107, 107, 0.893);
-  margin-top: 20px;
-  padding-top: 10px;
-  border-radius: 10px;
-  position: relative;
+  /* 100% du parent moins les 50px occupé par les marges entre les blocs. Le résultat divisé par le nombre de bloc */
+  width: 150px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
