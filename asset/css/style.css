@@ -3,7 +3,7 @@ body {
   background-color: white;
 }
 .container {
-  width: 1048 px;
+  width: 1048px;
   height: 100%;
   margin: 0 auto;
 }
@@ -16,13 +16,16 @@ h1 {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
   height: 80px;
   /* border: 1px solid black; */
 }
-
-header .content-box {
+header .container {
+  display: flex;
+}
+.content-box {
+  display: flex;
   width: 250px;
   height: 40px;
   border: 2px solid rgba(128, 128, 128, 0.333);
@@ -31,6 +34,7 @@ header .content-box {
   text-align: center;
   border-radius: 20px;
   position: relative;
+  margin-left: 20px;
 }
 .content-box img {
   width: 20px;
@@ -85,12 +89,17 @@ p {
   color: #ff5d5d;
 }
 .box {
+  position: sticky;
+  top: 0px;
+  scroll-behavior: smooth;
   /* border: 1px solid; */
   /* height: 100px; */
+
   display: flex;
   gap: 15px;
 }
 .box > div {
+  background-color: white;
   margin-top: 20px;
   border: 2px solid rgba(68, 68, 68, 0.7);
   border-radius: 10px;
@@ -99,4 +108,69 @@ p {
   padding: 15px;
   display: flex;
   justify-content: space-between;
+}
+.picture {
+  margin-top: 20px;
+  display: flex;
+  height: 430px;
+  gap: 1px;
+  margin-top: 30px;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.picture > span:nth-child(1) {
+  height: 100%;
+  width: 1000px;
+}
+.picture > span:nth-child(2) {
+  height: calc((100% - 1px) / 2);
+}
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.presentation > button {
+  position: absolute;
+  margin-left: 795px;
+  margin-top: 400px;
+}
+.presentation {
+  position: absolute;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.fait {
+  width: 200px;
+}
+
+.image-gallery {
+  margin-left: 300px;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  position: absolute;
+  width: 100%;
+}
+.image-gallery div {
+  flex: 0 0 auto;
+  gap: 3px;
+  scroll-snap-align: start;
+}
+.image-gallery img {
+  border-radius: 5px;
+  width: 80%;
+  height: 80%;
 }
